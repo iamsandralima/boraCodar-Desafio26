@@ -1,0 +1,208 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Source Serif 4', serif;
+
+  background-color: #FEECE0;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 ;
+}
+
+#pamonha-pic img {
+  max-width: 100%;
+}
+
+.top {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin: 88px 80px 56px 90px;
+}
+
+.top h1 {
+  font-size: 65px;
+  color: #58190a;
+  font-weight: 700;
+}
+
+
+.top p {
+  font-size: 28px;
+  color: #58190A;
+}
+
+.info p {
+  padding: 10px 0;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons,
+span,
+.buttons p {
+  font-size: 25px;
+  color: #9B6647;
+  
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bottom {
+  display: flex;
+  background-color: #9B6647;
+  color: #FEECE0;
+  justify-content: space-around;
+  align-items: start;
+  padding: 10rem 2rem;
+  width: 100vw;
+ 
+  overflow-x: hidden;
+}
+
+ul,
+ol {
+  padding-left: 28px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+li {
+  font-size: 16px;
+  font-family: 'Source Serif 4', serif;
+  font-weight: 400;
+}
+
+.col-1>div,
+.col-2>div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.col-1 h2,
+.col-2 h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+
+
+/* Media query for screens smaller than 768px (typical tablet size) */
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    margin: 30px 20px;
+  }
+  
+  .top h1 {
+    font-size: 40px;
+  }
+  
+  .info p {
+    font-size: 22px;
+  }
+  
+  .buttons,
+  span,
+  .buttons p {
+    font-size: 25px;
+  }
+  
+  .bottom {
+    flex-direction: column;
+    padding: 30px;
+  }
+  
+  .col-1,
+  .col-2 {
+    margin-bottom: 50px;
+  }
+  
+  .col-1 h2,
+  .col-2 h2 {
+    font-size: 25px;
+  }
+  
+  ul,
+  ol {
+    font-size: 14px;
+  }
+  
+  li {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .top {
+    margin: 30px 20px;
+  }
+  
+  .top h1 {
+    font-size: 30px;
+  }
+  
+  .info p {
+    font-size: 18px;
+  }
+  
+  .buttons,
+  span,
+  .buttons p {
+    font-size: 20px;
+  }
+  
+  .bottom {
+    padding: 20px;
+  }
+  
+  .col-1,
+  .col-2 {
+    margin-bottom: 40px;
+  }
+  
+  .col-1 h2,
+  .col-2 h2 {
+    font-size: 20px;
+  }
+  
+  ul,
+  ol {
+    font-size: 12px;
+  }
+  
+  li {
+    font-size: 12px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

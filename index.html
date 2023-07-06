@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image" href="./assets/panela.png" />
+  <link rel="stylesheet" type="text/css" href="./style.css"/>
+  <title>Receita Junina</title>
+</head>
+
+<body>
+  <main class="container">
+  <section class="top">
+    <div id="pamonha-pic">
+      <img src="./assets/ilustracao-pamonha.png" 
+      alt="ilustração de pamonha desenhada à mão"/>
+    </div>
+
+    <div class="info">
+      <h1>Pamonha</h1>
+      <p>Prato típico com milho verde ralado</p>
+
+      <div class="buttons">
+        <span>Receitas</span>
+
+        <button onclick="Quantity.less()" class="less">
+          <img src="./assets/button-sub.png" alt="Botão menos"/>
+        </button>
+
+        <p class="recipesQuantity">01</p>
+
+        <button onclick= "Quantity.more()" class="more">
+          <img src="./assets/button-add.png" alt="Botão mais"/>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bottom">
+    <div class="col-1" id="ingredients">
+      <div>
+        <img src="./assets/cesta.png" alt="imagem ícone de cesta"/>
+        <h2>Ingredientes</h2>
+      </div>
+
+      <ul>
+        <li>1 espiga de milho verde</li>
+        <li>1 colher de sopa de açúcar</li>
+        <li>1 colher de sopa de manteiga</li>
+        <li>1 colher de café de sal</li>
+        <li>Palha de milho (para embrulhar)</li>
+      </ul>
+    </div>
+
+    <div class="col-2">
+      <div>
+        <img src="./assets/panela.png" alt="imagem ícone de panela"/>
+        <h2>Modo de Preparo</h2>
+      </div>
+
+      <ol>
+        <li>Descasque a espiga de milho e corte os grãos.</li>
+        <li>Bata o milho, açúcar, manteiga e sal no liquidificador.</li>
+        <li>Coloque a massa nas palhas de milho e feche bem.</li>
+        <li>Cozinhe em água fervente por cerca de 40 minutos.</li>
+        <li>Deixe esfriar e sirva.</li>
+      </ol>
+    </div>
+  </section>
+  </main>
+</body>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
